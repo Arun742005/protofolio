@@ -1,63 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Arunkumar S | Frontend Developer</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arunkumar S | Frontend Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-<h1>Arunkumar S</h1>
-<p>Frontend Developer</p>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Arunkumar S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<section id="about">
-<h2>About Me</h2>
-<p>I’m a passionate frontend developer skilled in building responsive and interactive web interfaces using HTML, CSS, JavaScript, Bootstrap, and React.js. I love combining design and logic to craft engaging digital experiences.</p>
-</section>
+  <!-- Hero / About Section -->
+  <section id="about" class="py-5 text-center text-white bg-primary" data-aos="fade-up">
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Arunkumar S" class="rounded-circle mb-3 profile-img">
+      <h1 class="display-5">Arunkumar S</h1>
+      <p class="lead">Frontend Developer | Java, HTML, CSS, Bootstrap, JavaScript, React.js</p>
+    </div>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row g-3 justify-content-center">
+        <div class="col-md-2 col-4 skill-card">Java</div>
+        <div class="col-md-2 col-4 skill-card">HTML</div>
+        <div class="col-md-2 col-4 skill-card">CSS</div>
+        <div class="col-md-2 col-4 skill-card">Bootstrap</div>
+        <div class="col-md-2 col-4 skill-card">JavaScript</div>
+        <div class="col-md-2 col-4 skill-card">React.js</div>
+        <div class="col-md-2 col-4 skill-card">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
 
-<section id="skills">
-<h2>Skills</h2>
-<ul>
-<li>Java</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>Bootstrap</li>
-<li>JavaScript</li>
-<li>React.js</li>
-<li>Git & GitHub</li>
-</ul>
-</section>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6">
+         <div class="card project-card h-100">
+            <img src="assets/project-demo.png" class="card-img-top" alt="AI Project">
+            <div class="card-body">
+                <h5 class="card-title">AI-Driven Sentiment Analysis</h5>
+                <p class="card-text">Analyze YouTube comments using a pre-trained BERT model and visualize public sentiment with charts and word clouds.</p>
 
+                <ul>
+                <li>YouTube API integration for comment fetching</li>
+                <li>Sentiment classification: Positive, Negative, Neutral</li>
+                <li>Streamlit frontend and data visualization</li>
+                </ul>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="project-card">
-<h3>AI-Driven Sentiment Analysis for Social Media Monitoring</h3>
-<p>Developed an intelligent system that performs sentiment analysis on YouTube comments using a pre-trained BERT model and visualizes public opinion through charts and word clouds.</p>
-<ul>
-<li>Classifies posts as Positive, Negative, or Neutral using deep learning models.</li>
-<li>Integrated with YouTube API and Streamlit for frontend visualization.</li>
-<li>Modules: URL Extraction, Comment Fetching, Text Preprocessing, Sentiment Classification, Visualization.</li>
-</ul>
-<a href="https://github.com/Arun742005/AI-Driven-Sentiment-Analysis" target="_blank" class="btn">View on GitHub</a>
-</div>
-</section>
+                <!-- Dropdown for Output Screenshots -->
+                <p>
+                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#outputScreenshots" role="button" aria-expanded="false" aria-controls="outputScreenshots">
+                    Output Screenshots
+                </a>
+                </p>
+                <div class="collapse" id="outputScreenshots">
+                <div class="card card-body">
+                    <img src="assets/screenshot1.jpg" class="img-fluid mb-2" alt="Screenshot 1">
+                    <img src="assets/screenshot2.jpg" class="img-fluid mb-2" alt="Screenshot 2">
+                    <img src="assets/screenshot3.jpg" class="img-fluid mb-2" alt="Screenshot 3">
+                    <img src="assets/screenshot4.jpg" class="img-fluid mb-2" alt="Screenshot 4">
+                    <img src="assets/screenshot5.jpg" class="img-fluid mb-2" alt="Screenshot 5">
+                    <!-- Add more screenshots as needed -->
+                </div>
+                </div>
 
+                <a href="https://github.com/Arun742005/AI-Driven-Sentiment-Analysis" target="_blank" class="btn btn-primary mt-2">View on GitHub</a>
+            </div>
+            </div>
 
-<section id="education">
-<h2>Education</h2>
-<p><strong>B.Tech Information Technology</strong><br>
-Velammal College of Engineering and Technology<br>
-Anna University, Passed Out: 2026</p>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Education</h2>
+      <p class="text-center"><strong>B.Tech Information Technology</strong><br>
+      Velammal College of Engineering and Technology<br>
+      Anna University, Passed Out: 2026</p>
+    </div>
+  </section>
+
+  <!-- Certifications & Internships -->
+  <section id="certifications" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Certifications & Internships</h2>
+      <ul class="list-group list-group-flush mx-auto w-75">
+        <li class="list-group-item">Introduction to HTML, CSS, and JavaScript (Coursera)</li>
+        <li class="list-group-item">Internship at Kevel Cops — Android App Development (14 days)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact</h2>
+      <p>Email: <a href="mailto:arunkumar22ita34@gmail.com">arunkumar22ita34@gmail.com</a></p>
+      <p>Phone: +91 6374631229</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/arun-kumar-5979332b8" target="_blank">linkedin.com/in/arun-kumar-5979332b8</a></p>
+      <p>GitHub: <a href="https://github.com/Arun742005" target="_blank">github.com/Arun742005</a></p>
+    </div>
+  </section>
+
+  <footer class="py-3 bg-primary text-white text-center">
+    <p>© 2025 Arunkumar S. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
 </html>
